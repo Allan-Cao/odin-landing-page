@@ -9,7 +9,7 @@ body {
 }
 
 /* There's probably a better way to do this... */
-header, .information, .quote, .newsletter, footer {
+header, .information, .quote {
     padding: 0 15%;
 }
 
@@ -42,13 +42,14 @@ header, .hero, footer {
 .hero {
     display: flex;
     gap: 24px;
-    padding: 48px 15%;
+    padding: 60px 15%;
 }
 
 .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    gap: 10px;
 }
 .main-image {
     position: relative;
@@ -68,14 +69,6 @@ header, .hero, footer {
     color: #E5E7EB;
     font-size: 18px;
     font-weight: 300;
-}
-
-.hero button {
-    width: 12vh;
-    border-radius: 4px;
-    color: #e5e5e5;
-    flex-shrink: 0;
-    padding: 8px;
 }
 
 .hero button, .newsletter, .newsletter-signup-button {
@@ -105,23 +98,78 @@ header, .hero, footer {
 }
 
 .city {
-    max-width: 200px;
+    max-width: 150px;
 }
 
 .city img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 12px;
     border: 4px solid#3882F6;
 }
 
 .quote {
+    display: flex;
+    flex-direction: column;
     background-color: #E5E7EB;
-}
-
-.quote p {
+    padding-top: 48px;
+    padding-bottom: 48px;
     font-size: 36px;
     font-style: italic;
-    color: #1F2937;
+}
+
+.quote-author {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.newsletter {
+    margin: 6% 15%;
+    padding: 25px;
+    border-radius: 5px;
+    display: flex;
+    color: #F9FAF8;
+    justify-content: space-around;
+}
+
+.newsletter-content {
+    flex: 3 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+}
+
+.newsletter-signup {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-signup-button, .hero button {
+    width: 14vh;
+    color: #e5e5e5;
+    flex-shrink: 0;
+    border-radius: 5px;
+    padding: 5px 30px;
+    border-color: #F9FAF8;
+    color: #F9FAF8;
+}
+
+.secondary-heading {
+    font-weight: bold;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F9FAF8;
+    padding: 10px;
 }
